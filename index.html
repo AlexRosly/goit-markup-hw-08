@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>WebStudio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
@@ -38,6 +38,14 @@
                         </svg>+38 096 111 11 11</a>
                     </li>
             </ul>
+            <button type="button" class="menu__button-open js-open-menu">
+                <svg 
+                    width="40" 
+                    height="40" 
+                    aria-label="Переключатель мобильного меню">
+                    <use class="icon-menu" href="./images/webstudio-icon.svg#icon-menu" ></use>
+                </svg>
+            </button>
         </div>
     </header>
 
@@ -62,8 +70,8 @@
                         </svg>
                     </div>
                     <h3 class="specialites__title">Внимание к деталям</h3>
-                    <p class="specialites__text">Идейные соображения, а также<br />
-                            начало повседневной работы по<br />
+                    <p class="specialites__text">Идейные соображения, а также
+                            начало повседневной работы по
                             формированию позиции.
                     </p>
                 </li>
@@ -74,8 +82,8 @@
                         </svg>
                     </div>
                     <h3 class="specialites__title">Пунктуальность</h3>
-                    <p class="specialites__text">Задача организации, в особенности<br />
-                            же рамки и место обучения кадров<br />
+                    <p class="specialites__text">Задача организации, в особенности
+                            же рамки и место обучения кадров
                             влечет за собой.
                     </p>
                 </li>
@@ -86,8 +94,8 @@
                         </svg>
                     </div>
                     <h3 class="specialites__title">Планирование</h3>
-                    <p class="specialites__text">Равным образом консультация с<br />
-                            широким активом в значительной<br />
+                    <p class="specialites__text">Равным образом консультация с
+                            широким активом в значительной
                             степени обуславливает.
                     </p>
                 </li>
@@ -98,8 +106,8 @@
                          </svg>
                     </div>
                     <h3 class="specialites__title">Современные технологии</h3>
-                    <p class="specialites__text">Значимость этих проблем настолько<br />
-                            очевидна, что реализация плановых<br />
+                    <p class="specialites__text">Значимость этих проблем настолько
+                            очевидна, что реализация плановых
                             заданий.
                     </p>
                 </li>
@@ -114,7 +122,9 @@
                 <li class="work__item">
                     <a href="">
                         <div class="work__thumb">
-                            <img src="./images/desktopapp.jpg" 
+                            <img srcset="./images/work/desktop@1x.jpg 1x,
+                            ./images/work/desktop@2x.jpg 2x"
+                            src="./images/work/desktop@1x.jpg" 
                             alt="Разработка приложений для ПК" width="370" height="294">
                             <p class="work__discrition">Десктопные приложения</p>
                         </div>
@@ -123,7 +133,9 @@
                 <li class="work__item">
                     <a href="">
                         <div class="work__thumb">
-                            <img src="./images/mobileapp.jpg" 
+                            <img srcset="./images/work/mobileapp@1x.jpg 1x,
+                            ./images/work/mobileapp@2x.jpg 2x"
+                            src="./images/work/mobileapp@1x.jpg" 
                             alt="Разработка мобильных приложений" width="370" height="294">
                             <p class="work__discrition">Мобильные приложения</p>
                         </div>
@@ -132,7 +144,9 @@
                 <li class="work__item">
                     <a href="">
                         <div class="work__thumb">
-                            <img src="./images/design.jpg" 
+                            <img srcset="./images/work/desin@1x.jpg 1x,
+                            ./images/work/desin@2x.jpg 2x"
+                            src="./images/work/desin@1x.jpg" 
                             alt="Дизайн" width="370" height="294">
                             <p class="work__discrition">Дизайнерские решения</p>
                         </div>
@@ -147,7 +161,10 @@
             <h2 class="team__title">Наша команда</h2>
             <ul class="team__list">
                 <li class="team__item">
-                    <img src="./images/igor.jpg" alt="Игорь Демьяненко" width="270" height="260">
+                    <img srcset="./images/igor/igor.jpg 1x,
+                    ./images/igor/igor@2x.jpg 2x"
+                    src="./images/igor/igor.jpg"
+                    alt="Игорь Демьяненко">
                     <h3 class="team__name">Игорь Демьяненко</h3>
                     <p class="team__position">Product Designer</p>
                     <ul class="social">
@@ -186,7 +203,10 @@
                     </ul>
                 </li>
                 <li class="team__item">
-                    <img src="./images/olga.jpg" alt="Ольга Репина" width="270" height="260">
+                    <img srcset="./images/olga/olga.jpg 1x,
+                    ./images/olga/olga@2x.jpg 2x"
+                    src="./images/olga/olga.jpg"
+                    alt="Ольга Репина">
                     <h3 class="team__name">Ольга Репина</h3>
                     <p class="team__position">Frontend Developer</p>
                     <ul class="social">
@@ -224,7 +244,11 @@
                         </li>
                     </ul>
                 </li>
-                <li class="team__item"><img src="./images/nikolay.jpg" alt="Николай Тарасов" width="270" height="260">
+                <li class="team__item">
+                    <img srcset="./images/nikolay/nikolay.jpg 1x,
+                    ./images/nikolay/nikolay@2x.jpg 2x"
+                    src="./images/nikolay/nikolay.jpg"
+                    alt="Николай Тарасов">
                     <h3 class="team__name">Николай Тарасов</h3>
                     <p class="team__position">Marketing</p>
                     <ul class="social">
@@ -263,7 +287,10 @@
                     </ul>
                 </li>
                 <li class="team__item">
-                    <img src="./images/mikhail.jpg" alt="Михаил Ермаков" width="270" height="260">
+                    <img srcset="./images/mikhail/mikhail.jpg 1x,
+                    ./images/mikhail/mikhail@2x.jpg 2x"
+                    src="./images/mikhail/mikhail.jpg"
+                    alt="Михаил Ермаков">
                     <h3 class="team__name">Михаил Ермаков</h3>
                     <p class="team__position">UI Designer</p>
                     <ul class="social">
@@ -488,14 +515,55 @@
                         <svg width="16" height="15" class="checkbox__icon">
                         <use href="./images/webstudio-icon.svg#icon-check" class="checkbox__use"></use>
                         </svg>
-                        <span class="checkbox__text">Соглашаюсь с рассылкой и принимаю</span>&nbsp;<a href="">Условия договора</a>
+                        <span class="checkbox__text">Соглашаюсь с рассылкой и принимаю</span>&nbsp;<a href="" class="checkbox__link">Условия договора</a>
                     </label>
                     <button type="submit" class="checkbox-btn">Отправить</button>
                 </div>
             </form>
         </div>
+    </div>
+    <!-- mobile-menu -->
+    <div class="menu-container js-menu-container">
+        <button type="button" class="menu__button-close js-close-menu">
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                <use class="icon-cross" href="./images/webstudio-icon.svg#icon-cross"></use>
+            </svg>
+        </button>
+        <div class="mobile-menu">
+            <a href="#" class="mobile-menu__logo"><span class="mobile-menu__logo-initial">Web</span>Studio</a>
+        </div>
+        <ul class="mobile-site-nav">
+            <li class="mobile-site-nav__item">
+                <a href="#" class="mobile-site-nav__link--current">Студия</a>
+            </li>
+            <li class="mobile-site-nav__item">
+                <a href="./portfolio.html" class="mobile-site-nav__link">Портфолио</a>
+            </li>
+            <li class="mobile-site-nav__item">
+                <a href="#" class="mobile-site-nav__link">Контакты</a>
+            </li>
+        </ul>
+        <ul class="mobile-contacts">
+            <li class="mobile-contacts__item">
+                <a href="mailto:info@devstudio.com" class="mobile-contacts__link">
+                    <svg class="contacts__icon-envelop">
+                        <use href="./images/webstudio-icon.svg#icon-envelope">
+                        </use>
+                    </svg>info@devstudio.com
+                </a>
+            </li>
+            <li class="mobile-contacts__item">
+                <a href="tel:+380961111111" class="mobile-contacts__link">
+                    <svg class="contacts__icon-smartphone">
+                        <use href="./images/webstudio-icon.svg#icon-smartphone">
+                        </use>
+                    </svg>+38 096 111 11 11
+                </a>
+            </li>
+        </ul>
     </div>    
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>

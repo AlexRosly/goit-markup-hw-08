@@ -2,43 +2,47 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
         integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
         crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
     <header class="header">
         <div class="container header">
-            <nav class="site-nav">
-                <a href="./index.html" class="site-nav__logo"><span class="site-nav__logo-initial">Web</span>Studio</a>
-                <ul class="site-nav site-nav--list">
-                    <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Студия</a></li>
-                    <li class="site-nav__item"><a href="#" class="site-nav__link site-nav__link--current">Портфолио</a></li>
-                    <li class="site-nav__item"><a href="#" class="site-nav__link">Контакты</a></li>
+                <nav class="site-nav">
+                    <a href="./index.html" class="site-nav__logo"><span class="site-nav__logo-initial">Web</span>Studio</a>
+                    <ul class="site-nav site-nav--list">
+                        <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Студия</a></li>
+                        <li class="site-nav__item"><a href="#" class="site-nav__link site-nav__link--current">Портфолио</a></li>
+                        <li class="site-nav__item"><a href="#" class="site-nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <ul class="contacts">
+                    <li class="contacts__item">
+                        <a href="mailto:info@devstudio.com" class="contacts__link">
+                            <svg class="contacts__icon-envelop">
+                                <use href="./images/webstudio-icon.svg#icon-envelope">
+                                </use>
+                            </svg>info@devstudio.com</a>
+                    </li>
+                    <li class="contacts__item">
+                        <a href="tel:+380961111111" class="contacts__link">
+                            <svg class="contacts__icon-smartphone">
+                                <use href="./images/webstudio-icon.svg#icon-smartphone">
+                                </use>
+                            </svg>+38 096 111 11 11</a>
+                    </li>
                 </ul>
-            </nav>
-            <ul class="contacts">
-                <li class="contacts__item">
-                    <a href="mailto:info@devstudio.com" class="contacts__link">
-                        <svg class="contacts__icon-envelop">
-                            <use href="./images/webstudio-icon.svg#icon-envelope">
-                            </use>
-                        </svg>info@devstudio.com</a>
-                </li>
-                <li class="contacts__item">
-                    <a href="tel:+380961111111" class="contacts__link">
-                        <svg class="contacts__icon-smartphone">
-                            <use href="./images/webstudio-icon.svg#icon-smartphone">
-                            </use>
-                        </svg>+38 096 111 11 11</a>
-                </li>
-            </ul>
+            <button type="button" class="menu__button-open js-open-menu">
+                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="icon-menu" href="./images/webstudio-icon.svg#icon-menu"></use>
+                </svg>
+            </button>
         </div>
     </header>
 
@@ -67,8 +71,10 @@
                     <li class="card-list__item">
                         <a href="#" class="card-list__link">
                             <div class="card-list__thumb">
-                                <img src="./images/technocryak.jpg" 
-                                alt="" width="370" height="294">
+                                <img srcset="./images/technocryak/technocryak@1x.jpg 1x,
+                                ./images/technocryak/technocryak@2x.jpg 2x"
+                                src="./images/technocryak/technocryak@1x.jpg" 
+                                alt="Технокряк">
                                 <p class="card-list__text">Технокряк это современная площадка распространения коронавируса. 
                                     Компании используют эту платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.
@@ -83,8 +89,10 @@
                     <li class="card-list__item">
                         <a href="#" class="card-list__link">
                             <div class="card-list__thumb">
-                                <img src="./images/poster.jpg"
-                                alt="Постер New Orlean vs Golden Star" width="370" height="294">
+                                <img srcset="./images/poster/poster@1x.jpg 1x, 
+                                ./images/poster/poster@2x.jpg 2x"
+                                src="./images/poster/poster@1x.jpg"
+                                alt="Постер New Orlean vs Golden Star">
                                 <p class="card-list__text">Технокряк это современная площадка распространения коронавируса.
                                     Компании используют эту платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.
@@ -99,8 +107,10 @@
                     <li class="card-list__item">
                         <a href="#" class="card-list__link">
                             <div class="card-list__thumb">
-                                <img src="./images/restaurant.jpg" 
-                                alt="Ресторан Seafood" width="370" height="294">
+                                <img srcset="./images/restaurant/restaurant@1x.jpg 1x,
+                                ./images/restaurant/restaurant@2x.jpg 2x"
+                                src="./images/restaurant/restaurant@1x.jpg" 
+                                alt="Ресторан Seafood">
                                 <p class="card-list__text">Технокряк это современная площадка распространения коронавируса.
                                     Компании используют эту платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.
@@ -115,8 +125,10 @@
                     <li class="card-list__item">
                         <a href="#" class="card-list__link">
                             <div class="card-list__thumb">
-                                <img src="./images/prime.jpg" 
-                                alt="Проект Prime" width="370" height="294">
+                                <img srcset="./images/prime/prime@1x.jpg 1x,
+                                ./images/prime/prime@2x.jpg 2x"
+                                src="./images/prime/prime@1x.jpg" 
+                                alt="Проект Prime">
                                 <p class="card-list__text">Технокряк это современная площадка распространения коронавируса.
                                     Компании используют эту платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.
@@ -131,8 +143,10 @@
                     <li class="card-list__item">
                         <a href="#" class="card-list__link">
                             <div class="card-list__thumb">
-                                <img src="./images/boxes.jpg" 
-                                alt="Проект Boxes" width="370" height="294">
+                                <img srcset="./images/boxes/boxes@1x.jpg 1x,
+                                ./images/boxes/boxes@2x.jpg 2x"
+                                src="./images/boxes/boxes@1x.jpg" 
+                                alt="Проект Boxes">
                                 <p class="card-list__text">Технокряк это современная площадка распространения коронавируса.
                                     Компании используют эту платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.
@@ -147,8 +161,10 @@
                     <li class="card-list__item">
                         <a href="#" class="card-list__link">
                             <div class="card-list__thumb">
-                                <img src="./images/inspiration.jpg" 
-                                alt="Inspiration has no Borders" width="370" height="294">
+                                <img srcset="./images/inspiration/inspiration@1x.jpg 1x,
+                                ./images/inspiration/inspiration@2x.jpg 2x"
+                                src="./images/inspiration/inspiration@1x.jpg" 
+                                alt="Inspiration has no Borders">
                                 <p class="card-list__text">Технокряк это современная площадка распространения коронавируса.
                                     Компании используют эту платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.
@@ -163,8 +179,10 @@
                     <li class="card-list__item">
                         <a href="#" class="card-list__link">
                             <div class="card-list__thumb">
-                                <img src="./images/edition.jpg" 
-                                alt="Издание Limited Edition" width="370" height="294">
+                                <img srcset="./images/edition/edition@1x.jpg 1x,
+                                ./images/edition/edition@2x.jpg 2x"
+                                src="./images/edition/edition@1x.jpg" 
+                                alt="Издание Limited Edition">
                                 <p class="card-list__text">Технокряк это современная площадка распространения коронавируса.
                                     Компании используют эту платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.
@@ -179,8 +197,10 @@
                     <li class="card-list__item">
                         <a href="#" class="card-list__link">
                             <div class="card-list__thumb">
-                                <img src="./images/lab.jpg" 
-                                alt="Проект LAB" width="370" height="294">
+                                <img srcset="./images/lab/lab@1x.jpg 1x,
+                                ./images/lab/lab@2x.jpg 2x"
+                                src="./images/lab/lab@1x.jpg" 
+                                alt="Проект LAB">
                                 <p class="card-list__text">Технокряк это современная площадка распространения коронавируса.
                                     Компании используют эту платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.
@@ -195,8 +215,10 @@
                     <li class="card-list__item">
                         <a href="#" class="card-list__link">
                             <div class="card-list__thumb">
-                                <img src="./images/growingbusiness.jpg" 
-                                alt="Growing Business" width="370" height="294">
+                                <img srcset="./images/business/business@1x.jpg 1x,
+                                ./images/business/business@2x.jpg 2x"
+                                src="./images/business/business@1x.jpg" 
+                                alt="Growing Business">
                                 <p class="card-list__text">Технокряк это современная площадка распространения коронавируса.
                                     Компании используют эту платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.
@@ -277,6 +299,47 @@
         </div>
     </footer>
 
+    <!-- mobile-menu -->
+    <div class="menu-container js-menu-container">
+        <button type="button" class="menu__button-close js-close-menu">
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                <use class="icon-cross" href="./images/webstudio-icon.svg#icon-cross"></use>
+            </svg>
+        </button>
+        <div class="mobile-menu">
+            <a href="#" class="mobile-menu__logo"><span class="mobile-menu__logo-initial">Web</span>Studio</a>
+        </div>
+        <ul class="mobile-site-nav">
+            <li class="mobile-site-nav__item">
+                <a href="./index.html" class="mobile-site-nav__link">Студия</a>
+            </li>
+            <li class="mobile-site-nav__item">
+                <a href="#" class="mobile-site-nav__link--current">Портфолио</a>
+            </li>
+            <li class="mobile-site-nav__item">
+                <a href="#" class="mobile-site-nav__link">Контакты</a>
+            </li>
+        </ul>
+        <ul class="mobile-contacts">
+            <li class="mobile-contacts__item">
+                <a href="mailto:info@devstudio.com" class="mobile-contacts__link">
+                    <svg class="contacts__icon-envelop">
+                        <use href="./images/webstudio-icon.svg#icon-envelope">
+                        </use>
+                    </svg>info@devstudio.com
+                </a>
+            </li>
+            <li class="mobile-contacts__item">
+                <a href="tel:+380961111111" class="mobile-contacts__link">
+                    <svg class="contacts__icon-smartphone">
+                        <use href="./images/webstudio-icon.svg#icon-smartphone">
+                        </use>
+                    </svg>+38 096 111 11 11
+                </a>
+            </li>
+        </ul>
+    </div>
 
+    <script src="./js/menu.js"></script>
 </body>
 </html>
