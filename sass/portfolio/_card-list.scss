@@ -9,6 +9,7 @@
 
 .card-list__item {
   background: var(--card-list-color);
+  display: flex;
 
   &:hover,
   &:focus {
@@ -59,7 +60,20 @@
   }
 }
 
+.card-list__link {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-list__img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 .card-list__thumb {
+  height: 294px;
+  width: 100%;
   position: relative;
   overflow: hidden;
 
@@ -90,6 +104,7 @@
 }
 
 .description {
+  flex-grow: 1;
   background: var(--second-text-color);
   border: 1px solid var(--border-color);
   box-sizing: border-box;
